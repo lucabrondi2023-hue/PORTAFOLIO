@@ -32,16 +32,7 @@ body{
     z-index:-1;
 }
 
-/* ANIMACIONES */
-.reveal{
-    opacity:0;
-    transform:translateY(60px);
-    transition:1s ease;
-}
-.reveal.active{
-    opacity:1;
-    transform:translateY(0);
-}
+
 
 .container{
     max-width:1100px;
@@ -273,16 +264,7 @@ particlesJS("particles-js",{
 });
 </script>
 
-<!-- SCROLL -->
-<script>
-const reveals=document.querySelectorAll(".reveal");
-window.addEventListener("scroll",()=>{
-  reveals.forEach(el=>{
-    if(el.getBoundingClientRect().top < window.innerHeight - 100){
-        el.classList.add("active");
-    }
-  });
-});
+
 </script>
 
 </body>
